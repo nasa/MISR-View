@@ -1,0 +1,118 @@
+00README
+
+misr_view 5.3 RELEASE UPDATE
+May, 2006
+====================================================================
+REVISIONS/CHANGES SINCE VERSION 5.2:
+
+Fixed wraparound issue for orbit values that are larger than what
+can be handled by a short integer.
+====================================================================
+
+misr_view 5.2 RELEASE UPDATE
+September, 2005
+====================================================================
+REVISIONS/CHANGES SINCE VERSION 5.0:
+
+Fixed HDF and NetCDF "Save Data" capabilities; made changes to 
+StretchDN interface; fixed color issue on PC when saving color bar.
+====================================================================
+
+misr_view 5.0 RELEASE UPDATE
+September, 2004
+====================================================================
+REVISIONS/CHANGES SINCE VERSION 4.4:
+
+BIG CHANGE: misr_view is now IDL-VM compatible!  Only one caveat: only
+the supplied transforms can be used with misr_view running under the
+Virtual Machine.  The ability to edit and/or create transforms is
+therefore disabled.
+
+To obtain the IDL Virtual Machine FREE OF CHARGE, go to:
+
+http://www.rsinc.com/idlvm/index.asp
+
+Modified simple annotation capability within the "Save Image" utility.
+Users can now "scale" images that are either too large or too small
+with respect to the color bar and/or title.
+====================================================================
+
+misr_view 4.4 RELEASE UPDATE
+July 27, 2004
+====================================================================
+REVISIONS/CHANGES SINCE VERSION 4.2:
+
+Improved consistency with pseudocolor handling on systems with TrueColor 
+display devices, notably Macintosh and Windows systems.  XLOADCT and
+the color bar option should now work properly on all systems.
+
+Added simple annotation capability within the "Save Image" utility.
+Image with 3-line (maximum) title and annotated color bar now supported.
+
+Minor changes in the handling of default sizing of some GUIs.
+====================================================================
+
+misr_view 4.2 RELEASE UPDATE
+January 22, 2003
+====================================================================
+The misr_view save files have been updated in order to be fully
+compatible with IDL-RT (IDL Run Time).  If IDL-RT is being used to
+run misr_view, the following steps need to be followed in order for
+misr_view to operate correctly:
+
+(1) Decide which misr_view 4.2 save file is appropriate for your
+system (see below for more information)
+
+(2) RENAME the appropriate save file to "misr_view.sav"
+
+(3) Use this renamed save file with IDL-RT
+
+REMEMBER, THESE INSTRUCTIONS ONLY APPLY TO THOSE RUNNING IDL-RT!
+Users with full installations of the IDL software can skip the steps
+above.
+====================================================================
+
+
+misr_view 4.2 RELEASE UPDATE
+January 22, 2003
+====================================================================
+REVISIONS/CHANGES SINCE VERSION 4.1:
+
+Minor bug fixes to histogram interface.
+Minor bug fixes to AirMISR coordinate calculations.
+Minor bug fix with saving data out to vanilla HDF 4.x.
+Extended capability to save unscaled data out to NetCDF and flat binary format.
+Improved quality of reprojected high-resolution (greater than 1100m) parameters.
+
+SOME OF THE MAJOR CHANGES SINCE VERSION 4.0:
+
+Orbit dates extended through year 2020.
+Companion window displays block number, block x and block y.
+Vector overlays bug fix; line thickness disabled.
+Visual registration of differing resolutions bug fix.
+Histogram bug fix.
+
+SOME OF THE MAJOR CHANGES SINCE VERSION 3.3:
+
+Ability to ingest MISR "subsetted" files.
+Data transforms.
+Map projections.
+Vector Overlays.
+Color tables and color bar.
+Ability to store and recall everything in the data selection interface.
+====================================================================
+	
+========================================================================================
+IMPORTANT: A NOTE REGARDING THE PERSPECTIVE VIEWER TOOL
+========================================================================================
+The data window's Interactive Perspective Viewer Interface tool is a work in progress and
+is best used when running misr_view on the user's local system.  If running misr_view over
+a network, the perspective tool can be EXTREMELY SLOW to respond to the user's input and,
+in some cases, may appear to hang altogether.  Future versions of misr_view will optimize the
+perspective tool's speed but for now, discretion and patience is advised when using this tool
+over the network.
+	
+Any questions regarding the operation or installation of misr_view can be forwarded to:
+
+Charles Thompson (Charles.K.Thompson@jpl.nasa.gov)
+Jeffrey R Hall (Jeffrey.R.Hall@jpl.nasa.gov)

@@ -1,0 +1,352 @@
+0123456789012345678901234567890123456789012345678901234567890123456789012
+==============
+README
+==============
+March 8, 2018
+
+This document is intended to be a brief guide to setting up and running
+misr_view.  For more detailed information, please consult the misr_view
+user's guide, located in the "ug5.3_html" directory under the "external"
+directory.  Please see the FAQ below for more information.
+
+Once misr_view is unpacked, there should be two top-level directories,
+"external" and "src".  The "src" directory contains all of the source
+code for all of the modules that comprise misr_view.  The "external"
+directory contains all files that are needed to operate misr_view.
+Generally speaking, the user does not need to recompile the source
+code.
+
+For information regarding the history of changes to misr_view, please
+refer to the file "CHANGELOG".
+
+PLEASE READ THE FAQ AT THE END OF THIS DOCUMENT FOR ANSWERS TO COMMON
+QUESTIONS REGARDING THE INFORMATION CONTAINED HEREIN.
+
+=========================================================================
+
+OPTION #1
+OPTION #1
+OPTION #1
+OPTION #1
+OPTION #1
+OPTION #1
+
+
+STARTING UP MISR_VIEW WITHOUT A LICENSED VERSION OF IDL
+
+=========================================================================
+A "licensed version of IDL" means that you have purchased a copy of IDL
+from Harris Geospatial Solutions, Inc. (http://www.harrisgeospatial.com).
+If you have never dealt with this company, you probably do not have a 
+valid IDL license.
+
+In order to run misr_view without an IDL license, the IDL Virtual Machine
+(IDL-VM) must be downloaded from the HARRIS website
+(http://www.rsinc.com/idlvm/).  Due to export control policies, download 
+and installation of IDL (and subsequently the IDL Virtual Machine) 
+requires that you complete the registration and verification process via
+the HARRIS website.  Once done, click on 'My Account' in the top 
+right-hand corner, navigate to "Downloads", and then "All Downloads".
+Select the appropriate platform to begin the download and installation 
+process.
+Installation of the Virtual Machine will not be covered in this document.
+
+---------------
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+---------------
+(1) Start the IDL-VM by double-clicking the IDL-VM icon or selecting the
+IDL-VM via the Start button.
+
+(2) Dismiss the IDL-VM window that appears by clicking the 
+"click to continue" button.
+
+(3) When the selection dialog box appears, find and select the
+"misr_view.sav" file and click the "OK" button.  "misr_view.sav" will
+be located in the "external" directory.
+
+The data selection interface and main console should appear on the
+screen.
+
+-------------
+Macintosh OSX
+Macintosh OSX
+Macintosh OSX
+Macintosh OSX
+Macintosh OSX
+-------------
+There are two ways to invoke the IDL-VM on a Mac, either via a terminal
+window, or by clicking on the IDL-VM icon.  The latter will be covered 
+here, the former below.
+
+(1) Start the IDL-VM by double-clicking the IDL-VM icon.
+
+(2) Dismiss the IDL-VM window that appears by clicking the 
+"click to continue" button.
+
+(3) When the selection dialog box appears, find and select the
+"misr_view.sav" file and click the "OK" button.  "misr_view.sav" will
+be located in the "external" directory.
+
+The data selection interface and main console should appear on the
+screen.
+
+-----------------------------
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+-----------------------------
+Please note that it is assumed that the IDL-VM has been configured
+on your system.  If the steps below do not work, most likely the
+IDL-VM is not set up properly on your system.  Consult with a system
+administrator if you have one, or look at the online documentation
+for the IDL-VM (http://www.rsinc.com/idlvm/idlvm.pdf).
+
+(1) In a terminal window, type:
+
+idl -vm
+
+(2) Dismiss the IDL-VM window that appears by clicking the 
+"click to continue" button.
+
+(3) When the selection dialog box appears, find and select the
+"misr_view.sav" file and click the "OK" button.  "misr_view.sav" will
+be located in the "external" directory.
+
+The data selection interface and main console should appear on the
+screen.
+
+
+=========================================================================
+
+OPTION #2
+OPTION #2
+OPTION #2
+OPTION #2
+OPTION #2
+OPTION #2
+
+
+STARTING UP MISR_VIEW WITH A LICENSED VERSION OF IDL (PRE-COMPILED CODE)
+
+=========================================================================
+A "licensed version of IDL" means that you have purchased a copy of IDL
+from Harris Geospatial Solutions, Inc. (http://www.harrisgeospatial.com).
+If you have never dealt with this company, you probably do not have a 
+valid IDL license.
+Please see how to run misr_view without an IDL license (above)... Please
+note that misr_view users who have a valid IDL license can run misr_view
+as unlicensed users do...
+
+If you *do* have a valid IDL license, follow the instructions below for
+your specific operating system if you want to invoke misr_view from
+pre-compiled code:
+
+---------------
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+---------------
+(1) Start up IDL.
+
+(2) Make the "external" directory the current active directory.  For
+example, if the desired current directory is 
+C:\misr_stuff\misr_view\external\, the following command
+would be entered at the IDL command line:
+
+CD,'C:\misr_stuff\misr_view\external\'
+
+(3) At the IDL command line, type the following:
+
+RESTORE,'misr_view.sav'
+
+(4) Then, simply type:
+
+misr_view
+
+The data selection interface and main console should appear on the
+screen.
+
+------------------------------
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+------------------------------
+(1) Start up IDL in either command-line mode or the IDL Development 
+Interface, "idlde".
+(2) Make the "external" directory the current active directory.  For
+example, if the desired current directory is 
+/home/misr/misr_view/external/, the following command
+would be entered at the IDL command line:
+
+CD,'/home/misr/misr_view/external/'
+
+(3) At the IDL command line, type the following:
+
+RESTORE,'misr_view.sav'
+
+(4) Then, simply type:
+
+misr_view
+
+The data selection interface and main console should appear on the
+screen.
+
+
+=========================================================================
+
+OPTION #3
+OPTION #3
+OPTION #3
+OPTION #3
+OPTION #3
+OPTION #3
+
+
+STARTING UP MISR_VIEW WITH A LICENSED VERSION OF IDL (SOURCE CODE)
+
+=========================================================================
+A "licensed version of IDL" means that you have purchased a copy of IDL
+from Harris Geospatial Solutions, Inc. (http://www.harrisgeospatial.com).
+If you have never dealt with this company, you probably do not have a 
+valid IDL license.
+Please see how to run misr_view without an IDL license (above)... Please
+note that misr_view users who have a valid IDL license can run misr_view
+as unlicensed users do...
+
+If you *do* have a valid IDL license, follow the instructions below for
+your specific operating system if you want to compile and run misr_view
+from source code:
+
+---------------
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+Windows XP/2000/7/Vista
+---------------
+(1) Start up IDL.
+
+(2) Make the "src" directory the current active directory.  For
+example, if the desired current directory is 
+C:\misr_stuff\misr_view\src\, the following command
+would be entered at the IDL command line:
+
+CD,'C:\misr_stuff\misr_view\src\'
+
+(3) At the IDL command line, type the following:
+
+.compile compile_all
+RESOLVE_ALL
+
+(4) Make the "external" directory the current active directory.  For
+example, if the desired current directory is 
+C:\misr_stuff\misr_view\external\, the following command
+would be entered at the IDL command line:
+
+CD,'C:\misr_stuff\misr_view\external\'
+
+(5) Then, simply type:
+
+misr_view
+
+The data selection interface and main console should appear on the
+screen.
+
+-----------------------------
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+UNIX/Linux/Macintosh OSX/IRIX
+-----------------------------
+(1) Start up IDL in either command-line mode or the IDL Development 
+Interface, "idlde".
+(2) Make the "src" directory the current active directory.  For
+example, if the desired current directory is 
+/home/misr/misr_view/src/, the following command
+would be entered at the IDL command line:
+
+CD,'/home/misr/misr_view/src/'
+
+(3) At the IDL command line, type the following:
+
+.compile compile_all
+RESOLVE_ALL
+
+(4) Make the "external" directory the current active directory.  For
+example, if the desired current directory is 
+/home/misr/misr_view/external/, the following command
+would be entered at the IDL command line:
+
+CD,'/home/misr/misr_view/external/'
+
+
+(5) Then, simply type:
+
+misr_view
+
+The data selection interface and main console should appear on the
+screen.
+
+
+-------------------------------------------------------------------------
+   FFFFFFFFFF     AAAAAAAAAAA     QQQQQQQQQQ
+   FFFFFFFFFF     AAAAAAAAAAA     QQQQQQQQQQ
+   FF             AA       AA     QQ      QQ
+   FF             AA       AA     QQ      QQ
+   FFFFFF         AAAAAAAAAAA     QQ      QQ
+   FFFFFF         AAAAAAAAAAA     QQ      QQ
+   FF             AA       AA     QQ      QQ
+   FF             AA       AA     QQ      QQ
+   FF             AA       AA     QQQQQQQQQQQQ
+   FF             AA       AA     QQQQQQQQQQQQQ
+                                             QQ
+-------------------------------------------------------------------------
+
+
+=========================================================================
+>>> QUESTION: How do I open and access the misr_view user's guide?
+
+>>> ANSWER: First, you must have a common browser available, such as
+Netscape, Firefox, Internet Explorer, Mozilla, or Safari.  The assumption
+here is that the user knows how to start up the browser application.
+Once the browser is active, use the "Open File..." or "Open..." menu item
+under the "File" menu to open the file "misr_view_ug5.3.html", which is
+located in the "ug5.3_html" directory under the "external" directory.
+=========================================================================
+
+=========================================================================
+>>> QUESTION: Are there any differences in functionailty when running
+misr_view without a valid IDL license?
+
+>>> ANSWER: Yes.  When running misr_view with the IDL-VM, users will not
+be able to modify or create transform files.  Some transform files are
+provided with misr_view, and these should be sufficient for most users.
+The transform interface is described in detail in the misr_view user's
+guide.
+=========================================================================
+
+=========================================================================
+>>> QUESTION: How does one make a directory "active" on a PC so that a 
+licensed IDL user can run misr_view?
+
+>>> ANSWER: There are several ways to do this; look in the IDL documents
+to see how to add directories to a search list.  Another way to do this
+is by using the IDL command "CD".  For example, if the desired current
+directory is C:\misr_stuff\misr_view\external\, the following command
+would be entered at the IDL command line:
+
+CD,'C:\misr_stuff\misr_view\external\'
+=========================================================================
+0123456789012345678901234567890123456789012345678901234567890123456789012
+

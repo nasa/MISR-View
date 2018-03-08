@@ -1,0 +1,12 @@
+FUNCTION rotator_90inc, a, rot_val
+	trans_idx	= [1,0]
+	IF (SIZE(a))[0] eq 3 THEN trans_idx=[1,0,2]
+	
+	CASE rot_val OF
+		90.0:	RETURN, TRANSPOSE(TEMPORARY(REVERSE(TEMPORARY(a),2)),trans_idx)
+		-90.0:	RETURN, TRANSPOSE(TEMPORARY(REVERSE(TEMPORARY(a))),trans_idx)
+		180.0:	RETURN, REVERSE(TEMPORARY(REVERSE(TEMPORARY(a),1)),2)
+		ELSE:	RETURN, a
+	ENDCASE
+END
+; rotator_90inc
