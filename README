@@ -41,12 +41,12 @@ If you have never dealt with this company, you probably do not have a
 valid IDL license.
 
 In order to run misr_view without an IDL license, the IDL Virtual Machine
-(IDL-VM) must be downloaded from the HARRIS website
-(http://www.rsinc.com/idlvm/).  Due to export control policies, download 
-and installation of IDL (and subsequently the IDL Virtual Machine) 
-requires that you complete the registration and verification process via
-the HARRIS website.  Once done, click on 'My Account' in the top 
-right-hand corner, navigate to "Downloads", and then "All Downloads".
+(IDL-VM) must be downloaded from the HARRIS website. Due to export 
+control policies, download and installation of IDL (and subsequently the
+IDL Virtual Machine) requires that you complete the registration and 
+verification process via the HARRIS website.  Once done, click on 
+'My Account' in the top right-hand corner, navigate to "Downloads", and
+then "All Downloads". 
 Select the appropriate platform to begin the download and installation 
 process.
 Installation of the Virtual Machine will not be covered in this document.
