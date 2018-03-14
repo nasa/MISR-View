@@ -7,7 +7,8 @@ March 8, 2018
 This document is intended to be a brief guide to setting up and running
 misr_view.  For more detailed information, please consult the misr_view
 user's guide, located in the "ug5.3_html" directory under the "external"
-directory.  Please see the FAQ below for more information.
+directory or online at https://nasa.github.io/MISR-View/ .
+The FAQ below offers additional information.
 
 Once misr_view is unpacked, there should be two top-level directories,
 "external" and "src".  The "src" directory contains all of the source
